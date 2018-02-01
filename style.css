@@ -1,0 +1,44 @@
+div.headingbox {
+    border-width: 5px;
+    border-style: solid;
+    border-color: gray;
+    margin-bottom: 10px;
+    width: 100%;
+}
+div.headingbox h2 {
+    margin-left: 15px;
+}
+div.headingbox p {
+    margin-left: 15px;
+}
+div.masonry {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    height: 200vh;
+}
+div.masonry img {
+    width: 45%;
+    padding: 7px;
+}
+@media (min-width: 768px) {
+div.headingbox {
+    border-width: 5px;
+    border-style: solid;
+    border-color: gray;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    }
+div.masonry {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+div.masonry img {
+    width: 33%;
+}
+}
