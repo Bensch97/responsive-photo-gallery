@@ -14,16 +14,26 @@ div.headingbox h2 {
 div.headingbox p {
     margin-left: 15px;
 }
-div.images img {
-    padding: 7px;
+div.images {
+    display: flex;
+    flex-basis: 1100px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
 }
 @media (min-width: 768px) {
 div.container {
     display: flex;
     flex-direction: row;
-
+    height: 100vh;
 }
 div.headingbox {
     max-height: 400px;
+}
+div.images {
+    display: flex;
+    flex-basis: 100vw;
+    align-content: space-around;
 }
 }
