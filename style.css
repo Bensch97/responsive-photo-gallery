@@ -1,9 +1,12 @@
+div.container {
+    display: flex;
+    flex-direction: column;
+}
 div.headingbox {
     border-width: 5px;
     border-style: solid;
     border-color: gray;
     margin-bottom: 10px;
-    width: 100%;
 }
 div.headingbox h2 {
     margin-left: 15px;
@@ -11,34 +14,16 @@ div.headingbox h2 {
 div.headingbox p {
     margin-left: 15px;
 }
-div.masonry {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    height: 200vh;
-}
-div.masonry img {
-    width: 45%;
+div.images img {
     padding: 7px;
 }
 @media (min-width: 768px) {
-div.headingbox {
-    border-width: 5px;
-    border-style: solid;
-    border-color: gray;
+div.container {
     display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    flex-wrap: wrap;
-    }
-div.masonry {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+    flex-direction: row;
+
 }
-div.masonry img {
-    width: 33%;
+div.headingbox {
+    max-height: 400px;
 }
 }
